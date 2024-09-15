@@ -107,7 +107,3 @@ The API will be available at `http://localhost:8000`.
 
 ### Backend
 - `FRONTEND_URL`: URL of the frontend application (for CORS configuration)
-
-## Deployment
-
-For deployment instructions, please refer to the deployment guide in the project documentation.
