@@ -1,3 +1,5 @@
+
+
 To improve this:
 
 1. Custom Lexicon: You could modify VADER's lexicon to adjust the sentiment score for certain phrases or words that are commonly used positively in your specific context.
