@@ -1,4 +1,4 @@
-# Sentiment Analysis Project
+# Tweet Checker using Sentiment Analysis
 
 This project consists of a React frontend built with Vite and a Python backend using FastAPI to perform sentiment analysis on text input.
 
