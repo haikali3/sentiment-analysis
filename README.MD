@@ -2,6 +2,8 @@
 
 This project consists of a React frontend built with Vite and a Python backend using FastAPI to perform sentiment analysis on text input.
 
+
+
 ![Tweet Checker #1](https://github.com/haikali3/sentiment-analysis/blob/main/frontend/src/assets/pic-1.png)
 ![Tweet Checker #2](https://github.com/haikali3/sentiment-analysis/blob/main/frontend/src/assets/pic-2.png)
 
@@ -96,8 +98,14 @@ The API will be available at `http://localhost:8000`.
 1. Start both the frontend and backend servers.
 2. Open your browser and go to `http://localhost:5173`.
 3. Enter text in the input field and click "Add Text" to add it to the analysis list.
-4. Click "Analyze All Texts" to perform sentiment analysis.
-5. View the results in the chart and detailed breakdown below.
+4. In this example, Elon Musk's tweets are used as dataset.
+![Elon Musk Tweet #1](https://github.com/haikali3/sentiment-analysis/blob/main/frontend/src/assets/elon-musk-1.png)
+![Elon Musk Tweet #2](https://github.com/haikali3/sentiment-analysis/blob/main/frontend/src/assets/elon-musk-2.png)
+![Elon Musk Tweet #3](https://github.com/haikali3/sentiment-analysis/blob/main/frontend/src/assets/elon-musk-3.png)
+
+5. Click "Analyze All Texts" to perform sentiment analysis.
+6. View the results in the chart and detailed breakdown below.
+
 
 ## API Endpoints
 
