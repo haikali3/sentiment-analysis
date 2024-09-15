@@ -1,9 +1,113 @@
+# Sentiment Analysis Project
 
+This project consists of a React frontend built with Vite and a Python backend using FastAPI to perform sentiment analysis on text input.
 
-To improve this:
+## Project Structure
 
-1. Custom Lexicon: You could modify VADER's lexicon to adjust the sentiment score for certain phrases or words that are commonly used positively in your specific context.
-2. Alternative Models: Consider using more advanced NLP models that are better at understanding context and modern language use, including positive uses of profanity.
-3. Pre-processing: Implement a pre-processing step that identifies and handles common expressions like "Holy shit" as intensifiers rather than negative sentiment markers.
-4. Manual Review: For critical applications, include a step for manual review of edge cases like this.
-5. Fine-tuning: If using a machine learning-based sentiment analyzer, fine-tune it on a dataset that includes examples of positive uses of profanity.
+```
+sentiment-analysis-project/
+├── frontend/         # React frontend
+└── backend/          # Python FastAPI backend
+```
+
+## Frontend Setup
+
+The frontend is a React application built with Vite and uses pnpm as the package manager.
+
+### Prerequisites
+
+- Node.js (v14 or later)
+- pnpm (v6 or later)
+
+### Installation
+
+1. Navigate to the frontend directory:
+   ```
+   cd frontend
+   ```
+
+2. Install dependencies:
+   ```
+   pnpm install
+   ```
+
+### Running the Frontend
+
+To start the development server:
+
+```
+pnpm dev
+```
+
+The application will be available at `http://localhost:5173` by default.
+
+### Building for Production
+
+To create a production build:
+
+```
+pnpm build
+```
+
+The build output will be in the `dist` directory.
+
+## Backend Setup
+
+The backend is a Python application using FastAPI.
+
+### Prerequisites
+
+- Python 3.7 or later
+- pip (Python package installer)
+
+### Installation
+
+1. Navigate to the backend directory:
+   ```
+   cd backend
+   ```
+
+2. It's recommended to use a virtual environment:
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+
+3. Install the required packages:
+   ```
+   pip install fastapi uvicorn nltk
+   ```
+
+### Running the Backend
+
+To start the FastAPI server:
+
+```
+uvicorn main:app --reload
+```
+
+The API will be available at `http://localhost:8000`.
+
+## Usage
+
+1. Start both the frontend and backend servers.
+2. Open your browser and go to `http://localhost:5173`.
+3. Enter text in the input field and click "Add Text" to add it to the analysis list.
+4. Click "Analyze All Texts" to perform sentiment analysis.
+5. View the results in the chart and detailed breakdown below.
+
+## API Endpoints
+
+- POST `/analyze`: Accepts a JSON payload with a list of texts and returns sentiment analysis results.
+
+## Environment Variables
+
+### Frontend
+- `VITE_API_URL`: URL of the backend API (default: `http://localhost:8000`)
+
+### Backend
+- `FRONTEND_URL`: URL of the frontend application (for CORS configuration)
+
+## Deployment
+
+For deployment instructions, please refer to the deployment guide in the project documentation.
