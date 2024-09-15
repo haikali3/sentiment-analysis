@@ -28,7 +28,7 @@ data = [
     "I'm really disappointed with the quality.",
     "The customer service was excellent!",
     "I'm not sure how I feel about this.",
-    "Holy shit you are good"
+    "Holy shit this products are good"
 ]
 
 # Analyze sentiment for each piece of text
