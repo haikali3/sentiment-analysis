@@ -12,14 +12,14 @@ except AttributeError:
 else:
     ssl._create_default_https_context = _create_unverified_https_context
 
-# Download necessary NLTK data
+# Rule-based sentiment analysis tool - tune to sentiments expressed in social media
 nltk.download('vader_lexicon')
 
 # Get Polarity scores for the input text
 def analyze_sentiment(text):
     sia = SentimentIntensityAnalyzer() 
     return sia.polarity_scores(text)['compound']
-    # return -1 or 1
+    # return -1 to 1
 
 # Sample data (you could replace this with real data from a CSV file or API)
 data = [
