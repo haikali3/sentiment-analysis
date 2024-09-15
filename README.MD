@@ -2,6 +2,9 @@
 
 This project consists of a React frontend built with Vite and a Python backend using FastAPI to perform sentiment analysis on text input.
 
+![Tweet Checker #1](https://github.com/haikali3/sentiment-analysis/blob/main/frontend/src/assets/pic-1.png)
+![Tweet Checker #2](https://github.com/haikali3/sentiment-analysis/blob/main/frontend/src/assets/pic-2.png)
+
 ## Project Structure
 
 ```
